@@ -10,17 +10,29 @@
         <p class="vShop__price">От {{ item.price }}руб</p>
       </div>
       <p class="vShop__body">{{ item.body }}</p>
-      <button class="vShop__btn">подробнее</button>
+      <button class="vShop__btn" @click="pushShoppigCart(item)">Заказать</button>
     </div>
   </div>
 </template>
 
 <script>
+import { mapMutations } from 'vuex'
+
 export default {
   data(){
     return{
-
+      
     }
+  },
+
+  methods:{
+    push(item){
+      this.$emit('push', item)
+    },
+
+    ...mapMutations([
+      'pushShoppigCart'
+    ]),
   },
 
   props:{

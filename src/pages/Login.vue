@@ -6,12 +6,12 @@
       <form class="Login__form" @submit.prevent="log">
         <div class="form__item form__item_one">
           <label for="inpGroupOne" class="form__label">Почта: </label>
-          <input type="email" id="inpGroupOne" class="form__input" v-model="formLog.email">
+          <input type="email" id="inpGroupOne" class="form__input" v-model="formLog.email" placeholder="eline@gmail.com">
         </div>
 
         <div class="form__item form__item_two">
           <label for="inpGroupOne" class="form__label">Пароль: </label>
-          <input type="password" id="inpGroupOne" class="form__input" v-model="formLog.password">
+          <input type="password" maxlength="12" id="inpGroupOne" class="form__input" v-model="formLog.password" placeholder="YS0S782CM">
         </div>
 
         <a href="#" class="form__link"><span class="span span_yellow">Забыли пароль?</span></a>

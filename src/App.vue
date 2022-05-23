@@ -14,6 +14,8 @@
     <p class="nav__title" @click="nextPages({item: 'Новости', index: 2})" :class="{ 'nav__title_active': currentPageIndex === 2 }">Новости</p>
     <p class="nav__title" @click="nextPages({item: 'Услуги', index: 3})" :class="{ 'nav__title_active': currentPageIndex === 3 }" v-show="isAuth">Услуги</p>
     <p class="nav__title" @click="nextPages({item: 'Админка', index: 10})" :class="{ 'nav__title_active': currentPageIndex === 10 }" v-show="isAdmin">Панель Администрации</p>
+    <p class="nav__title" @click="nextPages({item: 'Вход', index: 4})" :class="{ 'nav__title_active': currentPageIndex === 4 }">Вход</p>
+    <p class="nav__title" @click="nextPages({item: 'Регистрация', index: 5})" :class="{ 'nav__title_active': currentPageIndex === 5 }">Регистрация</p>
   </div>
 
   <nav class="nav" :class="{ 'nav_hidde': windowWidth <= 576, 'nav_login': currentPageTitle === 'Вход' || currentPageTitle === 'Регистрация', 'nav_reg': currentPageTitle === 'Регистрация', 'nav_news': currentPageTitle === 'Новости', 'nav_shop': currentPageTitle === 'Услуги', 'nav_сart': currentPageTitle === 'Корзина',  'nav_company': currentPageIndex === 1 }">
@@ -37,7 +39,7 @@
       <p v-show="!isAuth && currentPageIndex === 0">/</p>
       <p class="nav__title nav__title_exit" v-show="isAuth && currentPageIndex === 0" @click="exit">Выход</p>
       <img src="./assets/icon/car.svg" alt="car" class="nav__car" @click="nextPages({item: 'Корзина', index: 50})" v-show="currentPageIndex === 3">
-      <p class="nav__logo_text nav__title" style="order: -1;" v-if="currentPageIndex !== 0 && currentPageTitle !== 'Вход' && currentPageTitle !== 'Регистрация'"><span class="span span_logo span_yellow">timurovcy</span></p>
+      <p class="nav__logo_text nav__title" style="order: -1;" v-if="currentPageIndex !== 0 && currentPageTitle !== 'Вход' && currentPageTitle !== 'Регистрация' && currentPageTitle !== 'Корзина'"><span class="span span_logo span_yellow">timurovcy</span></p>
     </div>
   </nav>
 

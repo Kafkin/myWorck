@@ -113,7 +113,7 @@
   } 
 
   .page_News_title {
-    max-width: 400px;
+    max-width: 350px;
     position: absolute;
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -167,7 +167,7 @@
   } 
 
   .page_News_title {
-    max-width: 600px;
+    max-width: 550px;
     font-size: 42px;
     line-height: 52px;
     color: #FFFFFF;
@@ -184,6 +184,7 @@
 @media (min-width: 1530px){
   .page_News_BoxImg{
     background: url('../img/pageNewsSet/dom_zdaniia_gory_148563_1920x10806.jpg');
+    background-repeat: no-repeat;
   } 
 
   .page_News_title {
@@ -215,6 +216,7 @@
 @media (min-width: 1800px){
   .page_News_BoxItem{
     right: 3%;
+    background-repeat: no-repeat;
   }
 }
 

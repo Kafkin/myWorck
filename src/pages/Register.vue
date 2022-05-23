@@ -6,22 +6,22 @@
       <form class="Login__form" @submit.prevent="reg">
         <div class="form__item form__item_one">
           <label for="inpGroupOne" class="form__label">Имя: </label>
-          <input type="text" id="inpGroupOne" class="form__input" v-model="formReg.name">
+          <input type="text" maxlength="8" id="inpGroupOne" class="form__input" v-model="formReg.name" placeholder="elina">
         </div>
 
         <div class="form__item form__item_one">
           <label for="inpGroupOne" class="form__label">Почта: </label>
-          <input type="email" id="inpGroupOne" class="form__input" v-model="formReg.email">
+          <input type="email" id="inpGroupOne" class="form__input" v-model="formReg.email" placeholder="eline@gmail.com">
         </div>
 
         <div class="form__item form__item_two">
           <label for="inpGroupOne" class="form__label">Пароль: </label>
-          <input type="password" id="inpGroupOne" class="form__input" v-model="formReg.password">
+          <input type="password" maxlength="12" id="inpGroupOne" class="form__input" v-model="formReg.password" placeholder="YS0S782CM">
         </div>
 
         <div class="form__item form__item_two">
           <label for="inpGroupOne" class="form__label">Повторите пароль: </label>
-          <input type="password" id="inpGroupOne" class="form__input" v-model="formReg.subPassword">
+          <input type="password" maxlength="12" id="inpGroupOne" class="form__input" v-model="formReg.subPassword" placeholder="YS0S782CM">
         </div>
 
         <div class="form__item form__item_two">
