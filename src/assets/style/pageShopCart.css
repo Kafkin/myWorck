@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Inter', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+/* font-family: 'Jua', sans-serif; */
+
+
+.page_ShopCart{
+  width: 100%; height: 100vh;
+  z-index: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ShopCart__empty{
+  width: 300px; height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid red; */
+  gap: 50px;
+}
+
+.ShopCart__empty_message{
+  width: 90%; height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 17px;
+}
+
+.ShopCart__empty_title{
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 107.52%;
+  color: #F1AA1E;
+}
+
+.ShopCart__empty_subtitle{
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 107.52%;
+  color: #000000;
+}
+
+.ShopCart__empty_box{
+  width: 90%; height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.ShopCart__empty_btn{
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 107.52%;
+  text-align: center;
+  color: #FFFFFF;
+  background: #F1AA1E;
+  border-radius: 320px;
+  padding: 11px 25px;
+  border: none;
+  cursor: pointer;
+}
+
+.ShopCart__empty_box > img{
+  width: 300px; height: 280px;
+}
+
+@media (min-width: 576px){
+  .ShopCart__empty{
+    width: 550px; height: max-content;
+    gap: 50px;
+  }
+
+  .ShopCart__empty_title{
+    font-size: 32px;
+  }
+  
+  .ShopCart__empty_subtitle{
+    font-size: 18px;
+  }
+
+  .ShopCart__empty_btn{
+    font-size: 18px;
+    color: #fff;
+    background: #F1AA1E;
+    padding: 11px 25px;
+  }
+  
+
+  .ShopCart__empty_box > img{
+    width: 400px; height: 380px;
+  }
+}
+
+@media (min-width: 992px){
+  .ShopCart__empty{
+    width: 850px; height: max-content;
+    gap: 50px;
+  }
+
+  .ShopCart__empty_title{
+    font-size: 32px;
+  }
+  
+  .ShopCart__empty_subtitle{
+    font-size: 18px;
+  }
+
+  .ShopCart__empty_btn{
+    font-size: 18px;
+    color: #fff;
+    background: #F1AA1E;
+    padding: 11px 25px;
+  }
+  
+
+  .ShopCart__empty_box > img{
+    width: 600px; height: 510px;
+  }
+}

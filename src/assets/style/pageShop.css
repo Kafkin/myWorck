@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Inter', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+
+.page_Shop{
+  width: 100%; height: max-content;
+  z-index: 500;
+}
+
+.page_Shop_BoxImg{
+  width: 100%; height: 300px;
+  overflow: hidden;
+  position: relative;
+  background: url('../img/pageNewsSet/dom_zdaniia_gory_148563_1920x10802.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0;
+  display: none;
+}
+
+/* .page_News_img{
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: -100px 0;
+} */
+
+.page_Shop_BoxItem{
+  width: 100%; height: max-content;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.page_Shop_subtitle{
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 107.52%;
+  color: #F1AA1E;
+  margin-bottom: 40px;
+}
+
+
+.page_Shop_navigation{
+  width: max-content; height: max-content;
+  display: flex;
+  gap: 17px;
+  z-index: 700;
+}
+
+.page_Shop_navigationItem{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.31);
+  cursor: pointer;
+}
+
+.page_Shop_navigationItemActive{
+  color: #F1AA1E;
+}
+
+.page_Shop_form{
+  width: max-content; height: max-content;
+  position: relative;
+  margin-top: 75px;
+  margin-bottom: 50px;
+  z-index: 700;
+}
+
+.page_Shop_form > img{
+  width: 23px; height: 23px;
+  position: absolute;
+  left: 85%;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.page_Shop_form > input{
+  width: 100%; height: 100%;
+  border: none;
+  padding: 13px 30px;
+  background: rgba(109, 101, 101, 0.15);
+  border-radius: 14px;
+  outline: none;
+}
+
+
+/* @media */
+@media (min-width: 480px){
+  .page_Shop_form{
+    width: 355px; height: 50px;
+    position: relative;
+    margin-top: 75px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 1500px){
+  .page_Shop_BoxImg{
+    width: 100%; height: 100vh;
+    position: absolute;
+    background: url('../img/pageShopSet/mbBgShop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0;
+    z-index: -1;
+    display: block;
+  }
+
+  .page_Shop_BoxItem {
+    width: max-content; height: max-content;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+  } 
+
+  .page_Shop_form {
+    width: 555px;
+    height: 50px;
+  }
+
+  .page_Shop_form > img {
+    width: 30px;
+    height: 30px;
+    left: 90%;
+  }
+}
+
+@media (min-width: 1700px){
+  .page_Shop_BoxItem{
+    right: 2rem;
+  }
+
+  .page_Shop_card{
+    gap: 20px;
+  }
+
+  .page_Shop_form{
+    margin-top: 65px;
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: 1800px){
+  .page_Shop_BoxItem{
+    right: 5rem;
+  }
+}
+
+@media (min-width: 1920px){
+  .page_Shop_BoxItem{
+    right: 7rem;
+  }
+}

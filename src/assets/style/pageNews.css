@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Inter', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+
+.page_News{
+  width: 100%; height: max-content;
+  z-index: 500;
+}
+
+.page_News_BoxImg{
+  width: 100%; height: 300px;
+  overflow: hidden;
+  position: relative;
+  background: url('../img/pageNewsSet/dom_zdaniia_gory_148563_1920x10802.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0;
+}
+
+/* .page_News_img{
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: -100px 0;
+} */
+
+.page_News_title{
+  position: absolute;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 40px;
+  color: #FFFFFF;
+  top: 50%;
+  left: 25%;
+  transform: translate(-25%, -50%);
+}
+
+.page_News_BoxItem{
+  width: 100%; height: max-content;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.page_News_subtitle{
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 107.52%;
+  color: #F1AA1E;
+  margin-bottom: 30px;
+}
+
+
+.page_News_navigation{
+  width: max-content; height: max-content;
+  display: flex;
+  gap: 17px;
+}
+
+.page_News_navigationItem{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.31);
+  cursor: pointer;
+}
+
+.page_News_navigationItemActive{
+  color: #F1AA1E;
+}
+
+
+/* @media */
+
+@media (min-width: 400px){
+  .page_News_img{
+    object-position: 0 0;
+  }
+}
+
+@media (min-width: 576px){
+  .page_News_BoxImg{
+    background: url('../img/pageNewsSet/dom_zdaniia_gory_148563_1920x10803.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0;
+  }  
+}
+
+@media (min-width: 892px){
+  .page_News{
+    overflow: hidden;
+  }
+
+  .page_News_BoxImg{
+    width: 100%; height: 100%;
+    position: absolute;
+    /* background: url('../img/pageNewsSet/dom_zdaniia_gory_148563_1920x10804.jpg'); */
+    background: url('../img/pageNewsSet/test.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0;
+    z-index: -1;
+  } 
+
+  .page_News_title {
+    max-width: 400px;
+    position: absolute;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 40px;
+    color: #FFFFFF;
+    top: 20%;
+    left: 2%;
+    transform: translate(0%, -50%);
+  }
+  
+  .page_News_subtitle{
+    font-size: 24px;
+    font-weight: 900;
+    align-self: flex-start;
+  }
+
+  .page_News_BoxItem{
+    position: absolute;
+    width: max-content; height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    right: 0;
+    bottom: 10%;
+    overflow: hidden;
+  }
+
+  .page_News_navigation{
+    margin-top: 30px;
+  }
+}
+
+@media(max-width: 892px){
+  .page_News_BoxItem{
+    margin-top: 55px;
+  }
+}
+
+@media (min-width: 1130px){
+  .page_News_BoxImg{
+    width: 100%; height: 100%;
+    position: absolute;
+    background: url('../img/pageNewsSet/dom_zdaniia_gory_148563_1920x10805.jpg');
+    /* background: url('../img/pageNewsSet/test.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0;
+    z-index: -1;
+  } 
+
+  .page_News_title {
+    max-width: 600px;
+    font-size: 42px;
+    line-height: 52px;
+    color: #FFFFFF;
+  }
+}
+
+
+@media (min-width: 1250px){
+  .page_News_BoxItem{
+    bottom: 5%;
+  }
+}
+
+@media (min-width: 1530px){
+  .page_News_BoxImg{
+    background: url('../img/pageNewsSet/dom_zdaniia_gory_148563_1920x10806.jpg');
+  } 
+
+  .page_News_title {
+    max-width: 700px;
+    font-size: 58px;
+    line-height: 72px;
+    color: #FFFFFF;
+  }
+}
+
+@media (min-width: 1700px){
+  .page_News_BoxImg{
+    background: url('../img/pageNewsSet/dom_zdaniia_gory_148563_1920x10807.jpg');
+    background-image: no-repeat;
+  } 
+
+  .page_News_BoxItem{
+    position: absolute;
+    width: max-content; height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    right: 0;
+    bottom: 5%;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 1800px){
+  .page_News_BoxItem{
+    right: 3%;
+  }
+}
+
+@media (min-width: 1850px){
+  .page_News_BoxItem{
+    right: 4%;
+  }
+}
+
+@media (min-width: 1920px){
+  .page_News_BoxItem{
+    right: 5%;
+  }
+
+  .page_News_BoxImg{
+    background-image: no-repeat;
+  } 
+}
